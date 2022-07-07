@@ -2,7 +2,7 @@ services:
   tcc-taketicket-client:
     build: ./../projects/tcc-taketicket-client
     image: tcc-taketicket-client-image
-    container_name: tcc-taketicket-client-contianer
+    container_name: tcc-taketicket-client-container
     volumes:
       - ../projects/tcc-taketicket-client:/app
       - '/app/node_modules'
