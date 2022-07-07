@@ -1,0 +1,12 @@
+services:
+  tcc-taketicket-client:
+    build: ./../projects/tcc-taketicket-client
+    image: tcc-taketicket-client-image
+    container_name: tcc-taketicket-client-contianer
+    volumes:
+      - ../projects/tcc-taketicket-client:/app
+      - '/app/node_modules'
+    ports:
+      - 3000:3000
+    stdin_open: true
+    tty: true
