@@ -10,3 +10,13 @@ services:
       - 3000:3000
     stdin_open: true
     tty: true
+  database-mongodb: 
+    image: mongo
+    container_name: 'database-mongodb-container'
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_USERNAME=tcc
+      - MONGO_INITDB_PASSWORD=tcc
+    volumes:
+      - ./database/mongo:/data/db
