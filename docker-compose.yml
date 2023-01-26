@@ -5,7 +5,6 @@ services:
     container_name: tcc-taketicket-client-container
     volumes:
       - ../projects/tcc-taketicket-client:/app
-      - '/app/node_modules'
     env_file:
      - .env
     ports:
